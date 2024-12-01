@@ -1,15 +1,6 @@
-import {
-  BoxGeometry,
-  Mesh,
-  MeshNormalMaterial,
-  PerspectiveCamera,
-  Scene,
-  WebGLRenderer,
-} from "three";
+import { PerspectiveCamera, Scene, WebGLRenderer } from "three";
 import "./style.css";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
-
-import {} from "";
 
 // init
 const camera = new PerspectiveCamera(
@@ -32,7 +23,7 @@ new OrbitControls(camera, renderer.domElement);
 // example
 
 // animation
-function animation(time: number) {
+function animation() {
   renderer.render(scene, camera);
 }
 
